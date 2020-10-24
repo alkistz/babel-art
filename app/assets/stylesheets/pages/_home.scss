@@ -1,1 +1,44 @@
 // Specific CSS for your home-page
+body {
+  background: #333;
+  color: #fff;
+}
+
+#showcase {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), image-url("home-bg.jpg");
+  position: relative;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  .showcase-inner {
+    margin-top: 200px
+  }
+}
+
+
+#home-songs {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), image-url("home-music.jpg");
+  position: relative;
+  min-height: 200px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#home-poems {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), image-url("home-poems.jpg");
+  position: relative;
+  min-height: 200px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#main-footer {
+  background: black;
+}
