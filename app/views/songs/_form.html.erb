@@ -1,0 +1,10 @@
+<%= simple_form_for(song) do |f| %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.input :title %>
+  <%= f.input :artist_name %>
+  <%= f.input :album_title %>
+  <%= f.input :lyrics_original %>
+  <%= f.input :lyrics_translated %>
+  <%= f.input :link %>
+  <%= f.submit %>
+<% end %>

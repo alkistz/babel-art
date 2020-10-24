@@ -5,3 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Cleaning up database"
+User.destroy_all
+Song.destroy_all
+puts "Database is clean"
+
+
+users = User.create([
+  {
+    email: 'alkiviadistzaras@yahoo.gr',
+    password: 'xaxaxa123'
+  },
+
+  {
+    email: 'allos@yahoo.gr',
+    password: '123456789'
+  }
+
+])
+
+
+
+
+
+

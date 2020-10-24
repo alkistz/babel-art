@@ -1,0 +1,9 @@
+<h1>List of all the songs</h1>
+
+<h3><%= current_user.email  %> </h3>
+<h5><%= current_user.id %> </h5>
+<ul>
+  <% @songs.each do |song| %>
+    <li><%= link_to song.name, song_path(song)  %></li>
+  <% end %>
+</ul>
