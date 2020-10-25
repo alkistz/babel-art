@@ -1,1 +1,27 @@
-<h2><%= @song.title %></h2>
+<section class="songs">
+  <div class="container">
+    <div class="songs-bg">
+      <div class="row">
+        <div class="col">
+          <h2><% @song.title %></h2>
+          <iframe width="350" height="200" src="<%= @song.link %>" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Original Lyrics:</h4>
+          <p><%= @song.lyrics_original %></p>
+        </div>
+        <div class="col-md-6">
+          <h4>Translated Lyrics:</h4>
+          <p><%= @song.lyrics_translated %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="songs-bg">
+
+</div>

@@ -1,9 +1,30 @@
-<h1>List of all the songs</h1>
+<section class="songs">
+  <div class="container" >
+    <div class="songs-bg">
+      <h1>List of all the songs</h1>
 
-<h3><%= current_user.email  %> </h3>
-<h5><%= current_user.id %> </h5>
-<ul>
-  <% @songs.each do |song| %>
-    <li><%= link_to song.name, song_path(song)  %></li>
-  <% end %>
-</ul>
+
+
+      <div class="cards">
+        <% @songs.each do |song| %>
+          <div class="card-song">
+            <iframe width="350" height="200" src="<%= song.link %>" frameborder="0" allowfullscreen></iframe>
+            <%= link_to song_path(song), class: "card-link" do %>
+              <div class="card-song-infos">
+                <h2><%= song.title %></h2>
+                <p><%= song.artist_name %></p>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+

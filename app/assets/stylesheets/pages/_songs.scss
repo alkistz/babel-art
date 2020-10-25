@@ -1,0 +1,27 @@
+.songs {
+  padding: 15px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), image-url("home-songs2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: black;
+
+
+
+  .songs-bg {
+    padding: 15px;
+    background: rgba(255,255,255,0.9);
+    min-height: 700px;
+    position: absolute;
+
+  }
+
+  iframe:hover {
+    color: white;
+  }
+}
+
+
